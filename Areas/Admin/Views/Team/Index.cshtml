@@ -1,0 +1,65 @@
+﻿@model List<Team>
+@{
+    int Count = 0;
+}
+<div class="page-breadcrumb bg-white">
+    <div class="row align-items-center">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+            <h4 class="page-title">Teams</h4>
+        </div>
+        <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+            <div class="d-md-flex">
+                <ol class="breadcrumb ms-auto">
+                    <li><a asp-action="Index" asp-controller="dashboard" class="fw-normal">Dashboard</a></li>
+                </ol>
+                <a asp-action="Create"  asp-controller="Team" target="_blank"
+                   class="btn btn-success  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">
+                  Create
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="white-box">
+            <h3 class="box-title">Teams</h3>
+            <div class="table-responsive">
+                <table class="table text-nowrap">
+                    <thead>
+                        <tr>
+                            <th class="border-top-0">#</th>
+                            <th class="border-top-0">Profile</th>
+                            <th class="border-top-0">First Name</th>
+                            <th class="border-top-0">Last Name</th>
+                            <th class="border-top-0">Job</th>
+                            <th class="border-top-0">Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(Team item in Model){
+                        <tr>
+                            <td>@(++Count)</td>
+                            <td><img style="width:100px" src="~/assets/img/@item.ProfileImageName"/></td>
+                            <td>@item.Name</td>
+                            <td>@item.Surname</td>
+                            <td>@item.Job.Name</td>
+                            <td>
+                                <a asp-action ="Read" asp-controller="Team" asp-route-id="@item.Id"><button class="btn btn-info">Details</button></a>
+                                
+                                <form method="get" asp-action="Update" asp-controller="Team" asp-route-id="@item.Id">
+                                       <button class="btn btn-primary">Edit</button>
+                                </form>
+
+                                 <form method="post" asp-action="Delete" asp-controller="Team" asp-route-id="@item.Id">
+                                    <button class="btn btn-danger" type="submit">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
