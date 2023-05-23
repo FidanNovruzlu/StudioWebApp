@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudioWebApp.DAL;
-using StudioWebApp.Migrations;
 using StudioWebApp.Models;
 using StudioWebApp.ViewModels.TeamVM;
 

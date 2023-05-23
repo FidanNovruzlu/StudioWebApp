@@ -30,57 +30,23 @@
                         <li><a class="page-scroll" href="#port">Portfolio</a></li>
                         <li><a class="page-scroll" href="#about">About</a></li>
                         <li><a class="page-scroll" href="#team">Team</a></li>
-                        <li><a class="page-scroll" href="#contact">Contact</a></li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                                <p class="text-white">@User.Identity.Name</p>
+
+                                <li><a asp-action="LogOut" asp-controller="Account" ><button class="btn btn-danger" type="submit">Log Out</button></a></li>
+                        }
+                        else
+                        {
+                              <li><a class="page-scroll" asp-action="Register" asp-controller="Account">Register</a></li>
+                             <li><a class="page-scroll" asp-action="Login" asp-controller="Account">Login</a></li>
+                        }
                     </ul>
                 </div>
             </div><!-- /.container-fluid -->
         </nav>
        
             @RenderBody()
-        <!-- ===== Contact Us ===== -->
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading" style="color:#3680C1">Contact Us</h2>
-                        <h3 class="section-subheading text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form action="#" method="post" name="sentMessage" id="contactForm" novalidate>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Your Message *" id="message" required></textarea>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <button type="submit" class="btn btn-primary">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
         <footer>
             <div class="container">
                 <div class="row">

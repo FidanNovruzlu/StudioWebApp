@@ -5,72 +5,81 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StudioWebApp
 build_property.RootNamespace = StudioWebApp
-build_property.ProjectDir = C:\Users\ClassTime\Desktop\Fidan_CodeAcademy\StudioWebApp\
+build_property.ProjectDir = D:\desktop\programs\C#\ASP.NET Core MVC\StudioWebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ClassTime\Desktop\Fidan_CodeAcademy\StudioWebApp
+build_property.MSBuildProjectDirectory = D:\desktop\programs\C#\ASP.NET Core MVC\StudioWebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Areas/Admin/Views/Dashboard/Index.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Areas/Admin/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Areas/Admin/Views/Shared/_Layout.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Areas/Admin/Views/Team/Create.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Areas/Admin/Views/Team/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhbVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Areas/Admin/Views/Team/Index.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Areas/Admin/Views/Team/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Areas/Admin/Views/Team/Read.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Areas/Admin/Views/Team/Read.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhbVxSZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Areas/Admin/Views/Team/Update.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Areas/Admin/Views/Team/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhbVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Areas/Admin/Views/_ViewImports.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Areas/Admin/Views/_ViewStart.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Views/Home/Index.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Views/Home/Privacy.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Views/Shared/Error.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Views/_ViewImports.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Views/_ViewStart.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ClassTime/Desktop/Fidan_CodeAcademy/StudioWebApp/Views/Shared/_Layout.cshtml]
+[D:/desktop/programs/C\#/ASP.NET Core MVC/StudioWebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ouj169kny2

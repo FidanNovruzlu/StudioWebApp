@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ClassTime\\Desktop\\Fidan_CodeAcademy\\StudioWebApp\\StudioWebApp.csproj": {}
+    "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\StudioWebApp\\StudioWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ClassTime\\Desktop\\Fidan_CodeAcademy\\StudioWebApp\\StudioWebApp.csproj": {
+    "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\StudioWebApp\\StudioWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ClassTime\\Desktop\\Fidan_CodeAcademy\\StudioWebApp\\StudioWebApp.csproj",
+        "projectUniqueName": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\StudioWebApp\\StudioWebApp.csproj",
         "projectName": "StudioWebApp",
-        "projectPath": "C:\\Users\\ClassTime\\Desktop\\Fidan_CodeAcademy\\StudioWebApp\\StudioWebApp.csproj",
-        "packagesPath": "C:\\Users\\ClassTime\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ClassTime\\Desktop\\Fidan_CodeAcademy\\StudioWebApp\\obj\\",
+        "projectPath": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\StudioWebApp\\StudioWebApp.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\StudioWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ClassTime\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,6 +80,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -88,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
