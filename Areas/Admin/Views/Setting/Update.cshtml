@@ -1,0 +1,13 @@
+﻿
+@model UpdateSettingVM
+<h1>Update Settings</h1>
+<div class="container px-5 py-5">
+<form class="container p-5" method="post">
+    <div class="form-group">
+    <label asp-for="Value"></label>
+    <input asp-for="Value" class="form-control" id="exampleInputPassword1">
+    <span class="text-danger" asp-validation-for="Value"></span>
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>
+</div>

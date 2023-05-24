@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dcsMC8wp1wT6kg+5GHepa5+2/zge15wfJDySvbmFX2g=",
+  "Hash": "dzJSH8J2FVrfRN1uySopUS/TO8zT4RgfNXCTRXpoBck=",
   "Source": "StudioWebApp",
   "BasePath": "_content/StudioWebApp",
   "Mode": "Default",
@@ -6713,23 +6713,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\d6259440-b51d-4a44-aedb-46c28c890c520ee0fa133f8cff513ac34c1f5110df58.jpg"
-    },
-    {
-      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\StudioWebApp\\wwwroot\\assets\\img\\d63b5b76-e00d-4c17-afd1-eee79d36cc3f3afe10863d096a6bcc73ccfed69d4f39.jpg",
-      "SourceId": "StudioWebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\StudioWebApp\\wwwroot\\",
-      "BasePath": "_content/StudioWebApp",
-      "RelativePath": "assets/img/d63b5b76-e00d-4c17-afd1-eee79d36cc3f3afe10863d096a6bcc73ccfed69d4f39.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\d63b5b76-e00d-4c17-afd1-eee79d36cc3f3afe10863d096a6bcc73ccfed69d4f39.jpg"
     },
     {
       "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\StudioWebApp\\wwwroot\\assets\\img\\xperia-z4-tablet-black-1240x840-a07acf270af4d6789d0e83aea747b064.png",

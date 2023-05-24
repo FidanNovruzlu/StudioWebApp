@@ -18,9 +18,12 @@ namespace StudioWebApp.Controllers
         public async Task< IActionResult> Index()
         {
             List<Team> teams = await _studioDbContext.Teams.Include(t=>t.Job).ToListAsync();
+            List<Setting> settings =await _studioDbContext.Settings.ToListAsync();
+
             HomeVM homeVM = new HomeVM()
             {
                 Teams = teams,
+                Settings=settings
             };
             return View(homeVM);
         }

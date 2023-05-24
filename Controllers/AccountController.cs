@@ -10,11 +10,15 @@ namespace StudioWebApp.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
-        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
         }
+
+
         public async Task<IActionResult> Register()
         {
             return View();
@@ -39,11 +43,26 @@ namespace StudioWebApp.Controllers
                 foreach(IdentityError? error in result.Errors)
                 {
                     ModelState.AddModelError("", error.Description);
+                    return View(registerVM);
                 }
-                return View();
             }
+
+            #region AddRole
+            IdentityResult identityResult = await _userManager.AddToRoleAsync(user, "Admin");
+            if (!identityResult.Succeeded)
+            {
+                foreach (IdentityError? error in identityResult.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                    return View(registerVM);
+                }
+            }
+            #endregion
+
             return RedirectToAction(nameof(Login));
         }
+
+
         public async Task<IActionResult> Login()
         {
             return View();
@@ -69,10 +88,26 @@ namespace StudioWebApp.Controllers
 
             return RedirectToAction("Index","Home");
         }
+
+
         public async Task<IActionResult> LogOut()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+
+
+        #region CreateRole
+        //public async Task<IActionResult> CreateRole()
+        //{
+        //    IdentityRole role = new IdentityRole()
+        //    {
+        //        Name="Admin"
+        //    };
+        //    IdentityResult result= await _roleManager.CreateAsync(role);
+        //    if(!result.Succeeded) return NotFound();
+        //    return Json("OK");
+        //}
+        #endregion
     }
 }

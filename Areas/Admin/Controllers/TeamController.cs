@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudioWebApp.DAL;
 using StudioWebApp.Models;
@@ -6,6 +7,7 @@ using StudioWebApp.ViewModels.TeamVM;
 
 namespace StudioWebApp.Areas.Admin.Controllers;
 [Area("Admin")]
+[Authorize(Roles ="Admin")]
 public class TeamController : Controller
 {
     private readonly StudioDbContext _studioDbContext;
@@ -100,12 +102,17 @@ public class TeamController : Controller
             {
                 await updateTeamVM.ProfileImage.CopyToAsync(fileStream);
             }
-            team.ProfileImageName = updateTeamVM.ProfileImageName;
+            updateTeamVM.ProfileImageName= team.ProfileImageName;
         }
+        else updateTeamVM.ProfileImageName = team.ProfileImageName;
+
+        team.Id= id;
         team.Surname = updateTeamVM.Surname;
         team.Name = updateTeamVM.Name;
         team.JobId = updateTeamVM.JobId;
+        team.ProfileImageName = updateTeamVM.ProfileImageName;
 
+        _studioDbContext.Teams.Update(team);
         await _studioDbContext.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
@@ -126,7 +133,7 @@ public class TeamController : Controller
     }
     public async Task<IActionResult> Read(int id)
     {
-        Team? team = await _studioDbContext.Teams.FindAsync(id);
+        Team? team = _studioDbContext.Teams.Include(t=>t.Job).FirstOrDefault(t=>t.Id==id);
         if (team == null) return NotFound();
 
         return View(team);

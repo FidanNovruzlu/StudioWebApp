@@ -8,6 +8,6 @@ public class UpdateTeamVM
     public string? Surname { get; set; }
     public int JobId { get; set; }
     public IFormFile? ProfileImage { get; set; }
-    public string? ProfileImageName { get; set; }
+    public string? ProfileImageName { get; set; } 
     public List<Job>? Jobs { get; set; }
 }

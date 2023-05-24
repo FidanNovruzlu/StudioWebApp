@@ -1,8 +1,13 @@
 ﻿@model Team
 
-<h1>@Model.Name</h1>
-<h1>@Model.Surname</h1>
+<h1>Name: @Model.Name</h1>
+<h1>Surname: @Model.Surname</h1><br />
+
+<h2>Id: @Model.Id</h2>
+<h3>Job: @Model.Job.Name</h3>
+<br />
 <div>
-<img src="~/assets/img/@Model.ProfileImageName" style="width:150px" />
+    <h4>Image:</h4>
+    <img src="~/assets/img/@Model.ProfileImageName" style="width:150px" />
 
 </div>

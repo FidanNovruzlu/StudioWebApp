@@ -6272,22 +6272,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\d6259440-b51d-4a44-aedb-46c28c890c520ee0fa133f8cff513ac34c1f5110df58.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\d63b5b76-e00d-4c17-afd1-eee79d36cc3f3afe10863d096a6bcc73ccfed69d4f39.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>StudioWebApp</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/StudioWebApp</BasePath>
-      <RelativePath>assets/img/d63b5b76-e00d-4c17-afd1-eee79d36cc3f3afe10863d096a6bcc73ccfed69d4f39.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\d63b5b76-e00d-4c17-afd1-eee79d36cc3f3afe10863d096a6bcc73ccfed69d4f39.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\IMG_0195.png))">
       <SourceType>Package</SourceType>
       <SourceId>StudioWebApp</SourceId>

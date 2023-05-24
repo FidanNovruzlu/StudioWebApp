@@ -12,5 +12,6 @@ namespace StudioWebApp.DAL
         }
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Team> Teams { get; set; }
+        public DbSet<Setting> Settings { get; set; }
     }
 }
