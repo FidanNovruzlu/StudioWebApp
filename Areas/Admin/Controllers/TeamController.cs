@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudioWebApp.DAL;
 using StudioWebApp.Models;
+using StudioWebApp.ViewModels;
 using StudioWebApp.ViewModels.TeamVM;
 
 namespace StudioWebApp.Areas.Admin.Controllers;
@@ -18,11 +19,18 @@ public class TeamController : Controller
         _webHostEnvironment = webHostEnvironment;
     }
 
-    public async Task< IActionResult> Index()
+    public async Task< IActionResult> Index(int page=1,int take=5)
     {
-        List<Team> teams = await _studioDbContext.Teams.Include(t => t.Job).ToListAsync();
+        List<Team> teams = await _studioDbContext.Teams.Skip((page-1)*take).Take(take).Include(t => t.Job).ToListAsync();
+        int allTeamCount=_studioDbContext.Teams.Count();
 
-        return View(teams);
+        PaginationVM<Team> pagination = new PaginationVM<Team>()
+        {
+            Teams = teams,
+            CurrentPage = page,
+            PageCount = (int)Math.Ceiling((double)allTeamCount / take),
+        };
+        return View(pagination);
     }
     public async Task<IActionResult> Create()
     {

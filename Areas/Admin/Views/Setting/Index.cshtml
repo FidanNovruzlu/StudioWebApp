@@ -38,14 +38,8 @@
                                 <td>@item.Key</td>
                                 <td>@item.Value</td>
                                 <td>
-                                    <a asp-action ="Read" asp-controller="Setting" asp-route-id="@item.Id"><button class="btn btn-info">Details</button></a>
-
                                     <form method="get" asp-action="Update" asp-controller="Setting" asp-route-id="@item.Id">
                                            <button class="btn btn-primary">Edit</button>
-                                    </form>
-
-                                     <form method="post" asp-action="Delete" asp-controller="Setting" asp-route-id="@item.Id">
-                                        <button class="btn btn-danger" type="submit">Delete</button>
                                     </form>
                                 </td>
                             </tr>
